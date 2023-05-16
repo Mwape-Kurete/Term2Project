@@ -40,31 +40,75 @@
                 <h1 class="subPageTitle">Build A sub</h1>
                 
                 <form>
-                    <button class="newSub" type="button"></button>
+                    <button class="newSub" type="button">Create A New Sub</button>
 
                     <select name="breads" id="breadOpt">
                         <option>BREAD</option>
                         <option>Brioche</option>
-                        <option>ctiabatta</option>
-                        <option>bageutte</option>
-                        <option>whole grain</option>
-                        <option>Brioche</option>white
+                        <option>Bagel</option>
+                        <option>Baguette</option>
                     </select>
 
-                    <select name="breads" id="breadOpt" mutliple="multiple">
+                    <select name="toppings" id="toppingsOpt" mutliple="multiple">
                         <option>TOPPINGS</option>
-                        <option>chicken breast</option>
-                        <option>shredded chicken</option>
-                        <option>fried chicken</option>
+                        <!--Protein x8-->
+                        <option>prosciutto</option>
+                        <option>fried chicken breast</option>
                         <option>sliced steak</option>
-                        <option>shredded pork</option>
-                        <option></option>white
+                        <option>pulled pork</option>
+                        <option>fried shrip</option>
+                        <option>Tuna</option>
+                        <option>Sliced Turkey</option>
+                        <option>Salami</option>
+                        <!--Cheese x5-->
+                        <option>American</option>
+                        <option>Brie</option>
+                        <option>Mozzarella</option>
+                        <option>Cream Cheese</option>
+                        <option>Gruyere</option>
+                        <!--produce x7-->
+                        <option>Avocado</option>
+                        <option>Pickles</option>
+                        <option>Coleslwaw</option>
+                        <option>Basil</option>
+                        <option>Red Onion *sliced</option>
+                        <option>Spinach</option>
+                        <option>Tomato</option>
+                    </select>
+
+                    <select name="sauce" id="sauceOpt" mutliple="multiple">
+                        <option>SAUCE</option>
+                        <option>Marinara</option>
+                        <option>Barbecue</option>
+                        <option>Bechamel</option>
+                        <option>Ketchup</option>
+                        <option>Au Jus</option>
                     </select>
                 </form>
+
+                <row class="row breadImg">
+                    <div class="col-12"></div>
+                </row>
+                <row class="row toppImg">
+                    <div class="col-12"></div>
+                </row>
+                <row class="row sauceImg">
+                    <div class="col-12"></div>
+                </row>
+
+                <button class="addSub" type="button">Add This Sub</button>
             </div>
 
             <div class="col-6 sub_builder">
-                
+                <h1 class="subPageTitle">Receipt</h1>
+                <div class="receipt">
+                    <!--Calculation-->
+                    <p>bread chosen: R</p>
+                    <p>toppings <i class="toppAmount">x</i> chosen: R</p>
+                    <p>sauces <i class="toppAmount">x</i> chosen: R</p>
+                    <h4 class="total">Your Total Is: </h4>
+                </div>
+                <button class="checkOutBtn" type="button">PROCEED TO CHECK OUT</button>
             </div>
         </div>
 
