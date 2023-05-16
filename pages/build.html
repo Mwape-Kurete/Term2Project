@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Subs</title>
+
+    <!--External Files-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+
+    <!--Internal Files-->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!--Bootstrap container-->
+    <div class="container-fluid">
+        <!--nav section-->
+        <div class="row nav">
+            <div class="col-12 nav">
+                <h1 class="logo">
+                    <a href="/index.html">Logo</a>
+                </h1>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href=".about-us">About Us</a></li>
+                    <li><a href="/build.html">Build A Sub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Build section section-->
+        <div class="row build-sub">
+
+            <div class="col-6 sub_builder">
+                <h1 class="subPageTitle">Build A sub</h1>
+                
+                <form>
+                    <button class="newSub" type="button">Create A New Sub</button>
+
+                    <select name="breads" id="breadOpt">
+                        <option>BREAD</option>
+                        <option>Brioche</option>
+                        <option>Bagel</option>
+                        <option>Baguette</option>
+                    </select>
+
+                    <select name="toppings" id="toppingsOpt" mutliple="multiple">
+                        <option>TOPPINGS</option>
+                        <!--Protein x8-->
+                        <option>prosciutto</option>
+                        <option>fried chicken breast</option>
+                        <option>sliced steak</option>
+                        <option>pulled pork</option>
+                        <option>fried shrip</option>
+                        <option>Tuna</option>
+                        <option>Sliced Turkey</option>
+                        <option>Salami</option>
+                        <!--Cheese x5-->
+                        <option>American</option>
+                        <option>Brie</option>
+                        <option>Mozzarella</option>
+                        <option>Cream Cheese</option>
+                        <option>Gruyere</option>
+                        <!--produce x7-->
+                        <option>Avocado</option>
+                        <option>Pickles</option>
+                        <option>Coleslwaw</option>
+                        <option>Basil</option>
+                        <option>Red Onion *sliced</option>
+                        <option>Spinach</option>
+                        <option>Tomato</option>
+                    </select>
+
+                    <select name="sauce" id="sauceOpt" mutliple="multiple">
+                        <option>SAUCE</option>
+                        <option>Marinara</option>
+                        <option>Barbecue</option>
+                        <option>Bechamel</option>
+                        <option>Ketchup</option>
+                        <option>Au Jus</option>
+                    </select>
+                </form>
+
+                <row class="row breadImg">
+                    <div class="col-12"></div>
+                </row>
+                <row class="row toppImg">
+                    <div class="col-12"></div>
+                </row>
+                <row class="row sauceImg">
+                    <div class="col-12"></div>
+                </row>
+
+                <button class="addSub" type="button">Add This Sub</button>
+            </div>
+
+            <div class="col-6 sub_builder">
+                <h1 class="subPageTitle">Receipt</h1>
+                <div class="receipt">
+                    <!--Calculation-->
+                    <p>bread chosen: R</p>
+                    <p>toppings <i class="toppAmount">x</i> chosen: R</p>
+                    <p>sauces <i class="toppAmount">x</i> chosen: R</p>
+                    <h4 class="total">Your Total Is: </h4>
+                </div>
+                <a href="/checkout.html">
+                    <button type="button">PROCEED TO CHECKOUT</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <!--Footer-->
+            <div class="row footer">
+                <div class="col-4" class=" well wellNumOne">
+                    <p>Logo</p>
+                </div>
+                <div class="col-4" class="2well wellNumTwo">
+                    <p>Copyrights reserved</p>
+                </div>
+                <div class="col-4" class="well wellNumThree">
+                    <img class="socials">
+                    <p>insta</p>
+                    <img class="socials">
+                    <p>tiktok</p>
+                    <img class="socials">
+                    <p>twitter</p>
+                    <img class="socials">
+                    <p>facebook</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
