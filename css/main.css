@@ -1,3 +1,7 @@
+/*nav*/
+
+/*hero*/
+
 .hero-bg{
     height: 750px; 
 }
@@ -10,6 +14,8 @@
     margin-top: 200px;
 }
 
+/*about*/
+
 .about{
    height: 780px;
 }
@@ -17,3 +23,40 @@
 .about-copy{
     margin-top: 150px;
 }
+
+.about-img{
+    margin-top: 50px;
+}
+
+/*subs*/
+.subs{
+    margin-bottom: 400px;
+    margin-top: 30px
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 150px;
+}
+
+.socials {
+    display: inline;
+}
+
+.wellNumOne{
+    margin-left: 40px;
+}
+
+.wellNumtwo{
+    text-align: center;
+}
+
+.wellNumThree~ul{
+    float: right;
+}
+
+
+
+
+
