@@ -30,7 +30,11 @@
         crossorigin="anonymous"></script>
 
     <!--Fonts-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Darumadrop+One&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
     <!--Internal Files-->
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/index.js"></script>
@@ -41,7 +45,11 @@
     <!--Bootstrap components start here-->
     <!--nav section-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/index.html">Logo</a>
+        <a class="navbar-brand" href="#">
+            <img src="/assets/icons/SubHaus_logo.png" width="30" height="30" class="d-inline-block align-top"
+                alt="Sub Haus logo" class="subLogo">
+            Sub Haus.
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,7 +69,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <!--hero section-->
     <div class="jumbotron jumbotron-fluid hero-bg">
         <div class="container container-fluid hero">
@@ -79,85 +87,17 @@
             </div>
             <div class="col-6 about-copy">
                 <h1 class="about-headT">About Us.</h1>
-                <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima porro
-                    consectetur, fugit nesciunt quae, mollitia esse vero debitis, placeat laborum quas? Quisquam dolore
-                    porro quae optio, cupiditate at repudiandae.</p>
+                <p class="about-para">This submarine sandwich restaurant specialises in all sorts of goodness regarding
+                    sandwiches.
+
+                    With various bread options and fillings, customers can customise their sandwiches to their liking.
+                    Some of the popular options have been added to the sub of the month category, there you can buy any
+                    of the most popular sandwiches from the last month. In addition to sandwiches, Sub Haus also has a
+                    special Haus sauce which is added to all sandwiches. This sauce is vegan and gluten-free.</p>
             </div>
         </div>
 
         <!--Subs Of The Month-->
-        <div class="row">
-            <h1 class="subsOfMonth">Subs of The Month</h1>
-
-            <div class="col-3 subs subOne">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg1"></div>
-                </div>
-            </div>
-            <div class="col-3 subs subTwo">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg2"></div>
-                </div>
-            </div>
-            <div class="col-3 subs subThree">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg3"></div>
-                </div>
-            </div>
-            <div class="col-3 subs subFour">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg4"></div>
-                </div>
-            </div>
-            <!--hidden-->
-            <div class="col-3 subs subFive">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg5"></div>
-                </div>
-            </div>
-            <div class="col-3 subs subSix">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg6"></div>
-                </div>
-            </div>
-            <div class="col-3 subs subSev">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg7"></div>
-                </div>
-            </div>
-            <div class="col-3 subs subEight">
-                <h4 class="titleSubs">Lorem</h4>
-                <p class="paraSubs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minima aspernatur
-                    odit, placeat sed, aut nulla.</p>
-                <div class="subImg">
-                    <div class="subImg8"></div>
-                </div>
-            </div>
-
-            <div class="dragSymb">#line here</div>
-        </div>
-
         <div class="row">
             <div class="col-6">
                 <h1 class="subsOfMonth">Subs of The Month</h1>
@@ -176,25 +116,32 @@
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
+                            <!--Sub Cards one-->
                             <div class="row">
                                 <div class="col-md-3 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/assets/images/rajdeepcraft_sub1.jpg">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="/assets/images/rajdeepcraft_sub1.jpg">
                                         <div class="card-body">
                                             <h4 class="card-title">Feel Good</h4>
-                                            <p class="card-text">Need a healthy alternatitive? try our feel good sandwhich with whole grain bread, gruyere cheese, prochutto and kale topped with our famous SUB HAUS sauce.</p>
-
+                                            <p class="card-text">Need a healthy alternatitive? try our feel good
+                                                sandwhich with whole grain bread, gruyere cheese, prochutto and kale
+                                                topped with our famous SUB HAUS sauce.</p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW</a>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/assets/images/rajdeepcraft_sub2.jpg">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="/assets/images/rajdeepcraft_sub2.jpg">
                                         <div class="card-body">
                                             <h4 class="card-title">Sublicious</h4>
-                                            <p class="card-text">This loaded smoked pork sub will send you to orbit. SUB HAUS sauce, slow smoked pork with bbq honey sauce, melted gruyere and spring onion</p>
-
+                                            <p class="card-text">This loaded smoked pork sub will send you to orbit. SUB
+                                                HAUS sauce, slow smoked pork with bbq honey sauce, melted gruyere and
+                                                spring onion</p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -203,8 +150,10 @@
                                         <img class="img-fluid" alt="100%x280" src="/assets/images/rajeesh_sub3.jpg">
                                         <div class="card-body">
                                             <h4 class="card-title">Holy Shrimp!</h4>
-                                            <p class="card-text">Fresh oof the boat goodness. This sub has fried shrimp in our home baked baguette rolls, that come well buttered and finally the shrimp is topped with our HAUS mayo</p>
-
+                                            <p class="card-text">Fresh oof the boat goodness. This sub has fried shrimp
+                                                in our home baked baguette rolls, that come well buttered and finally
+                                                the shrimp is topped with our HAUS mayo</p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW</a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,14 +162,18 @@
                                         <img class="img-fluid" alt="100%x280" src="/assets/images/rajeesh_sub4.jpg">
                                         <div class="card-body">
                                             <h4 class="card-title">Le Frique</h4>
-                                            <p class="card-text">Braaied chicken breast has never tasted so good. This Sub is jam packed with flavour. Our well seasoned chicken breast is charcoal braaied and added to a delicus mix of grilled peppers and finally topped with SUB HAUS sacue</p>
-
+                                            <p class="card-text">Braaied chicken breast has never tasted so good. This
+                                                Sub is jam packed with flavour. Our well seasoned chicken breast is
+                                                charcoal braaied and added to a delicus mix of grilled peppers and
+                                                finally topped with SUB HAUS sacue</p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW</a>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+                        <!--Sub cards two-->
                         <div class="carousel-item">
                             <div class="row">
 
@@ -228,40 +181,52 @@
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="/assets/images/rajeesh_sub5.jpg">
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                            <h4 class="card-title">fried but light</h4>
+                                            <p class="card-text">Jumbo shrimp has never tasted better. For those who
+                                                like a little heat, this sandwich features crispy fried shrimp tossed in
+                                                our spicy Sub Haus sauce, paired with rocket, tomato, and jalapeño mayo
+                                                on a toasted ciabatta roll.</p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW</a>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/assets/images/rajeesh_sub6.jpg">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="/assets/images/side-view-sandwich-white-bread-with-grilled-meat-cutlet-cheese-lettuce-french-fries-mayo-ketchup-boardjpg.jpg">
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                            <h4 class="card-title">A little smoke</h4>
+                                            <p class="card-text">A delicious sandwich that features tender grilled
+                                                chicken slathered in smoky BBQ sauce, topped with crispy onion, pickles,
+                                                grilled pepper and a drizzle of Sub Haus sauce.</p>
+                                            <a href="#" class="btn btn-dark">RDER NOW</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/assets/images/rajeesh_sub7.jpg">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="/assets/images/spicy-meat-bread-with-vegetables.jpg">
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                            <h4 class="card-title">Mo' Beef Mo' Flava</h4>
+                                            <p class="card-text">Thinly sliced marinated beef cooked on a vertical spit,
+                                                wrapped in a warm pita bread and topped with lettuce, tomato, onion, and
+                                                a tangy yogurt sauce. </p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/assets/images/rajeesh_sub8.jpg">
+                                        <img class="img-fluid" alt="100%x280"
+                                            src="/assets/images/tendir-doner-with-chicken-table.jpg">
                                         <div class="card-body">
-                                            <h4 class="card-title">Special title treatment</h4>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                            <h4 class="card-title">le Chick</h4>
+                                            <p class="card-text">This sandwich features braaied chicken tenders tossed
+                                                in tangy buffalo sauce, paired with lettuce, tomato, red onion, and Sub
+                                                Haus blue cheese dressing on a freshly-baked Turkish pita.</p>
+                                            <a href="#" class="btn btn-dark">ORDER NOW</a>
                                         </div>
                                     </div>
                                 </div>
