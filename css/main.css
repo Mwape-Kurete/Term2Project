@@ -1,62 +1,204 @@
+/*fonts*/
+body {
+    background-color: #f3eee5;
+    font-family: 'Annie Use Your Telescope', cursive;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 46px;
+    color: #ac4e1a;
+}
+
+.hero-headT {
+    font-size: 84px;
+}
+
+h2 {
+    color: #19462f;
+    font-size: 48px;
+}
+
+p {
+    font-size: 22px;
+}
+
+h4 {
+    font-family: 'Darumadrop One', cursive;
+    color: #401f1a;
+}
+
+.topLogo {
+    font-size: 24px;
+    font-family: 'Darumadrop One', cursive;
+    color: #19462f;
+}
+
+/*
+font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Darumadrop One', cursive;
+font-family: 'Luckiest Guy', cursive;*/
+
 /*nav*/
+li {
+    font-size: 24px;
+}
 
 /*hero*/
 
-.hero-bg{
-    height: 750px; 
+.hero-bg {
+    height: 750px;
+    background-color: #f3eee5;
 }
 
-.hero-copy{
+.hero-copy {
     width: 50%;
 }
 
-.hero{
-    margin-top: 200px;
+.hero {
+    margin-top: 150px;
 }
 
 /*about*/
 
-.about{
-   height: 780px;
+.about {
+    height: 780px;
 }
 
-.about-copy{
-    margin-top: 150px;
+.about-copy {
+    margin-top: 100px;
 }
 
-.about-img{
+.about-img {
     margin-top: 50px;
 }
 
 /*subs*/
-.subs{
+
+.mr-1 {
+    height: 40px;
+    width: 40px;
+    background-color: #19462f;
+    color: #f3eee5;
+    border: none;
+}
+
+.subs {
     margin-bottom: 400px;
     margin-top: 30px
 }
 
+.card {
+    border: 2px solid #19462f;
+    border-radius: 8px;
+    color: #19462f;
+    min-height: 750px;
+}
+
+.btn {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 20px;
+}
+
 /*footer*/
-footer{
+footer {
     width: 100%;
-    height: 150px;
+    height: 100px;
+    background-color: #401f1a;
+    color: #ac4e1a;
+}
+
+.footer{
+    padding-top: 25px;
 }
 
 .socials {
     display: inline;
 }
 
-.wellNumOne{
-    margin-left: 40px;
+.wellNumOne {
+    padding-left: 40px;
 }
 
-.wellNumtwo{
-    text-align: center;
+.wellNumtwo {
+    margin-top: 150px;
 }
 
-.wellNumThree~ul{
+.wellNumThree~ul {
     float: right;
 }
 
 
+/*build sub*/
+
+.builder {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.build-sub {
+    height: 850px;
+}
+
+.sub_builder {
+    margin-top: 50px;
+}
+
+.sauceImg {
+    margin-bottom: 100px;
+}
+
+.newSub {
+    border: solid 3px #19462f;
+    border-radius: 8px;
+    background-color: #19462f;
+    color: #f3eee5;
+    margin-right: 10px;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.addSub {
+    border: solid 3px #19462f;
+    border-radius: 8px;
+    background-color: #19462f;
+    color: #f3eee5;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.checkout {
+    border: solid 3px #19462f;
+    border-radius: 8px;
+    background-color: #19462f;
+    color: #f3eee5;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.form-check{
+    display: block;
+    color: #401f1a;
+}
+
+select{
+    margin-bottom: 30px;
+    background-color: #f3eee5;
+    border: #19462f solid 2px;
+    border-radius: 5px;
+    color: #401f1a;
+}
 
 
+/*checkout page*/
+.checkForm{
+    height: 750px;
+}
 
+.checkOutForm{
+    margin-top: 200px;
+}

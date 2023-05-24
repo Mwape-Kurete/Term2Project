@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home Page</title>
 
     <!--External Files-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -15,24 +15,56 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
 
-    <!--Fonts-->
+    <!--Bootstrap implementation for CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Darumadrop+One&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
     <!--Internal Files-->
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/index.js"></script>
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!--Nav section #Logo Only-->
-        <div class="row navHeaderOnly">
-            <div class="col-12">
-                <h1 class="logo">Logo</h1>
-                <a href="/pages/build.html">
-                    <h3 class="goBack">Back to Build a Sub Page</h3>
-                </a>
-            </div>
-        </div>
 
+    <!--nav section-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="/assets/icons/SubHaus_logo.png" width="30" height="30" class="d-inline-block align-top"
+                alt="Sub Haus logo" class="subLogo">
+            <span class="topLogo">Sub Haus.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../pages/build.html">Go back to building your subs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid checkForm">
         <!--checkOut col div-->
         <div class="row checkOutForm">
             <h1 class="checkOutHead">Check-Out</h1>
@@ -61,7 +93,9 @@
             </div>
             <!--Gif and button-->
             <div class="col-6 imgBtn">
-                <div class="colbox"></div>
+                <div class="colbox">
+                    <img src="/assets/images/Dark Green Minimalist Aesthetic Modern Paper Texture Business Brand Fashion Logo.png">
+                </div>
                 <a href="/pages/payment.html">
                     <button type="button">PAY NOW</button>
                 </a>
@@ -69,6 +103,28 @@
         </div>
 
     </div>
+
+    <footer>
+        <div class="container-fluid">
+            <!--Footer-->
+            <div class="row footer">
+                <div class="col-4" class="well wellNumOne">
+                    <img src="/assets/icons/SubHaus_logo.png" width="30px" height="30px">
+                </div>
+                <div class="col-4" class="well wellNumTwo">
+                    <p>Copyrights reserved</p>
+                </div>
+                <div class="col-4" class="well wellNumThree">
+                    <ul>
+                        <li class="socials">instagram</li>
+                        <li class="socials">twitter</li>
+                        <li class="socials">tiktok</li>
+                        <li class="socials">facebook</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
