@@ -53,25 +53,29 @@ li {
 }
 
 .hero-copy {
-    width: 50%;
+    width: 80%;
+}
+
+.hero-body{
+    margin-top: 150px;
 }
 
 .hero {
-    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 /*about*/
 
 .about {
-    height: 780px;
+    height: 850px;
 }
 
 .about-copy {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .about-img {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 /*subs*/
@@ -200,5 +204,19 @@ select{
 }
 
 .checkOutForm{
-    margin-top: 200px;
+    margin-top: 80px;
+}
+
+/*pay*/
+
+.payForm{
+    height: 750px;
+}
+
+.stndForm{
+    margin-top: 100px;
+}
+
+.imgBtn{
+    margin-top: 100px;
 }

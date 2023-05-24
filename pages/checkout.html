@@ -72,33 +72,66 @@
             <div class="col-6 stndForm">
                 <form>
                     <legend>Your Total Is: </legend>
-                    <input class="form-input" type="text" placeholder="Full Name">
-                    <input class="form-input" type="email" placeholder="Email Address"> 
-                    <textarea class="form-input" placeholder="Street Address" rows="10"></textarea>
-
-                    <label class="switch">
-                        Pick-up at store
-                        <input class="checkBx" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-
-                    <label class="switch">
-                        Add A Tip
-                        <input class="checkBx" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-
-                    <label class="tip">Tip Amount:</label>
-                </form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="fName">Name</label>
+                        <input type="text" class="form-control" id="fName" placeholder="Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="sName">Surname</label>
+                        <input type="text" class="form-control" id="sName" placeholder="Surname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="txtEmail">Email</label>
+                      <input type="email" class="form-control" id="txtEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="txtAddy">Address</label>
+                      <input type="text" class="form-control" id="txtAddy" placeholder="Street Address">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="txtCity">City</label>
+                        <input type="text" class="form-control" id="txtCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="txtProv">Province</label>
+                        <select id="txtProv" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>KwaZulu-Natal</option>
+                          <option>North West</option>
+                          <option>Mpumalanga</option>
+                          <option>Pretoria</option>
+                          <option>Limpopo</option>
+                          <option>Western Cape</option>
+                          <option>Gauteng</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" maxlength="4">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Add Tip amount</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>Choose...</option>
+                          <option value="1">10%</option>
+                          <option value="2">15%</option>
+                          <option value="3">20%</option>
+                        </select>
+                    </div>
+                    <a href="/pages/payment.html">
+                        <button type="button" class="btn btn-success">Pay Now</button>
+                    </a>
+                  </form>
             </div>
             <!--Gif and button-->
             <div class="col-6 imgBtn">
                 <div class="colbox">
                     <img src="/assets/images/Dark Green Minimalist Aesthetic Modern Paper Texture Business Brand Fashion Logo.png">
                 </div>
-                <a href="/pages/payment.html">
-                    <button type="button">PAY NOW</button>
-                </a>
             </div>
         </div>
 
@@ -109,7 +142,7 @@
             <!--Footer-->
             <div class="row footer">
                 <div class="col-4" class="well wellNumOne">
-                    <img src="/assets/icons/SubHaus_logo.png" width="30px" height="30px">
+                    <img src="/assets/images/falling_sandwich.png" width="30px" height="30px">
                 </div>
                 <div class="col-4" class="well wellNumTwo">
                     <p>Copyrights reserved</p>

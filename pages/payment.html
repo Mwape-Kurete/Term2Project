@@ -63,14 +63,14 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <!--PayWall-->
+    <div class="container-fluid checkForm">
+        <!--checkOut col div-->
         <div class="row payForm">
-            <h1 class="checkOutHead">Pay now!</h1>
             <!--Form-->
             <div class="col-6 stndForm">
+                <h1 class="PaymentHead">Pay Now</h1>
                 <form>
-                    <legend>You are Paying: </legend>
+                    <legend>Your are Paying: </legend>
                     <!--Payment Option-->
                     <label class="radio">
                         Credit Card
@@ -81,29 +81,39 @@
                         PayPal
                         <input class="radioBtn" type="radio" name="payMethod" value="card">
                     </label>
-
-                    <!--text areas-->
-                    <input class="form-input" type="text" placeholder="Name on Card">
-
-                    <input class="form-input" type="number" placeholder="Card Number" maxlength="16"> 
-
-                    <label class="cardInfo">Expirey Date 
-                        <input class="short-form-input" type="month" placeholder="MM/YY">
-                    </label>     
-                    <label class="cardInfo"> CVV
-                        <input class="short-form-input" type="date" placeholder="###">    
-                    </label>                
-
-                    <button type="button">Confirm Payment</button>
-                    
-                </form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" class="form-control" id="cardName" placeholder="Name on Card">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="cardNum">Card Number</label>
+                        <input type="number" class="form-control" id="cardNum" placeholder="Card Number" maxlength="16">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="expDate">Expirey Date</label>
+                        <input type="month" class="form-control" id="expDate" placeholder="MM/YY">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="cvv">CVV</label>
+                        <input type="number" class="form-control" id="cvv" maxlength="3">
+                      </div>
+                    </div>
+                    <a href="../index.html">
+                        <button type="button" class="btn btn-danger">Confirm Payment</button>
+                    </a>
+                  </form>
             </div>
             <!--Gif and button-->
             <div class="col-6 imgBtn">
-                <div class="colbox"></div>
-                
+                <div class="colbox">
+                    <img src="/assets/images/Dark Green Minimalist Aesthetic Modern Paper Texture Business Brand Fashion Logo.png">
+                </div>
             </div>
         </div>
+
     </div>
 
     <footer>
