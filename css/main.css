@@ -105,6 +105,9 @@ li {
     font-size: 20px;
 }
 
+.img-fluid{
+    max-height: 250px;
+}
 /*footer*/
 footer {
     width: 100%;
