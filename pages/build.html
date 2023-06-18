@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Home Page</title>
-    
-        <!--External Files-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-            crossorigin="anonymous"></script>
-    
-        <!--Bootstrap implementation for CSS-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    
-        <!--Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Darumadrop+One&family=Luckiest+Guy&display=swap"
-            rel="stylesheet">
-        <!--Internal Files-->
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="/js/index.js"></script>
-    
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home Page</title>
+
+    <!--External Files-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap implementation for CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Darumadrop+One&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <!--Internal Files-->
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="../js/index.js"></script>
+
+</head>
+
 <body>
 
     <!--nav section-->
@@ -79,9 +81,11 @@
 
             <div class="col-6 sub_builder">
                 <h1 class="subPageTitle">Build A sub</h1>
-                
+
                 <form>
                     <button class="newSub" type="button">Create A New Sub</button>
+
+                    <input type="text" class="form-control" placeholder="Give your Super Sub" id="subName">
 
                     <select name="breads" id="breadOpt">
                         <option>BREAD</option>
@@ -90,53 +94,187 @@
                         <option>Baguette</option>
                     </select>
 
-                    <select name="toppings" id="toppingsOpt" mutliple>
-                        <option>TOPPINGS</option>
-                        <!--Protein x8-->
-                        <option value="1">prosciutto</option>
-                        <option value="2">fried chicken breast</option>
-                        <option value="3">sliced steak</option>
-                        <option value="4">pulled pork</option>
-                        <option value="5">fried shrip</option>
-                        <option value="6">Tuna</option>
-                        <option value="7">Sliced Turkey</option>
-                        <option value="8">Salami</option>
-                        <!--Cheese x5-->
-                        <option value="9">American</option>
-                        <option value="10">Brie</option>
-                        <option value="11">Mozzarella</option>
-                        <option value="12">Cream Cheese</option>
-                        <option value="13">Gruyere</option>
-                        <!--produce x7-->
-                        <option value="14">Avocado</option>
-                        <option value="15">Pickles</option>
-                        <option value="16">Coleslwaw</option>
-                        <option value="17">Basil</option>
-                        <option value="18">Red Onion *sliced</option>
-                        <option value="19">Spinach</option>
-                        <option value="20">Tomato</option>
-                    </select>
+                    <div class="row fillings">
+                        <h2>Choose Your Fillings</h2>
+                        <div class="col-4 proteins"> 
+                            <h3>Proteins</h3>
+                            <!--Protein x8-->
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="prosciutto"
+                                    id="prosciutto" data-cost="15">
+                                <label class="form-check-label" for="prosciutto">
+                                    prosciutto
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="friedChick"
+                                    id="friedChick" data-cost="15">
+                                <label class="form-check-label" for="friedChick">
+                                    Fried Chicken
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="slicedS" id="slicedS"
+                                    data-cost="15">
+                                <label class="form-check-label" for="slicedS">
+                                    Sliced Steak
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="pulledP" id="pulledP"
+                                    data-cost="15">
+                                <label class="form-check-label" for="slicedS">
+                                    Pulled Pork
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="friedS" id="friedS"
+                                    data-cost="15">
+                                <label class="form-check-label" for="friedS">
+                                    Fried Shrimp
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="tuna" id="tuna"
+                                    data-cost="15">
+                                <label class="form-check-label" for="tuna">
+                                    Tuna
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="turkeyS" id="turkeyS"
+                                    data-cost="15">
+                                <label class="form-check-label" for="turkeyS">
+                                    Sliced Turkey
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="salami" id="salami"
+                                    data-cost="15">
+                                <label class="form-check-label" for="salami">
+                                    Salami
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 cheese"> 
+                            <h3>Cheese</h3>
+                            <!--cheese x5-->
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="american"
+                                    id="american" data-cost="15">
+                                <label class="form-check-label" for="american">
+                                    American Cheese
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="brie"
+                                    id="brie" data-cost="15">
+                                <label class="form-check-label" for="brie">
+                                    Brie Cheese
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="mozz" id="mozz"
+                                    data-cost="15">
+                                <label class="form-check-label" for="mozz">
+                                    Mozzarella
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="cream" id="cream"
+                                    data-cost="15">
+                                <label class="form-check-label" for="cream">
+                                    Cream Cheese
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="gruyere"
+                                    id="gruyere" data-cost="15">
+                                <label class="form-check-label" for="gruyere">
+                                    Gruyere Cheese
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 Relish"> 
+                            <h3>Relish</h3>
+                            <!--relish x7-->
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="avo"
+                                    id="avo" data-cost="15">
+                                <label class="form-check-label" for="avo">
+                                    Avocado
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="pickles"
+                                    id="pickles" data-cost="15">
+                                <label class="form-check-label" for="pickles">
+                                    Pickles
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="cole" id="cole"
+                                    data-cost="15">
+                                <label class="form-check-label" for="cole">
+                                    Coleslaw
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="basil" id="basil"
+                                    data-cost="15">
+                                <label class="form-check-label" for="basil">
+                                    Basil
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="redOn" id="redOn"
+                                    data-cost="15">
+                                <label class="form-check-label" for="redOn">
+                                    Red Onion Sliced
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="spinich" id="spinich"
+                                    data-cost="15">
+                                <label class="form-check-label" for="spinich">
+                                    Spinich
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="toppings" type="checkbox" value="tomato" id="tomato"
+                                    data-cost="15">
+                                <label class="form-check-label" for="tomato">
+                                    Tomato
+                                </label>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Barbecue</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Marinara</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Bechamel</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Ketchup</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Au Jus</label>
-                      </div>
+                    <div class="row fillings">
+                        <h2>Choose Your Sauce</h2>
+                        <div class="col-12">
+                            <div class="form-check-input>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Barbecue</label>
+                            </div>
+                            <div class="form-check-input">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Marinara</label>
+                            </div>
+                            <div class="form-check-input">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Bechamel</label>
+                            </div>
+                            <div class="form-check-input">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Ketchup</label>
+                            </div>
+                            <div class="form-check-input">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Au Jus</label>
+                            </div> 
+                        </div>
+                     </div>
                 </form>
 
                 <row class="row breadImg">
@@ -191,4 +329,5 @@
         </div>
     </footer>
 </body>
+
 </html>
