@@ -2,10 +2,146 @@ let newSub = [];
 
 buildAsub = () => {
     
-    let newSubTot = 0;
+    let subTot = 0;
 
-    let subName = 
+    let subName = document.getElementById("subName").value; 
+    let bread = document.getElementById("breadOpt").value; 
 
+    if(bread === "Brioche"){
+        subTot = subTot + 30;
+
+    } else if (bread === "Bagel"){
+        subTot = subTot + 25;
+
+    } else if (bread === "Baguette"){
+        subTot = subTot + 15;
+
+    } else if (bread === "Whole"){
+        subTot = subTot + 20;
+
+    } else if (bread === "Bun"){
+        subTot = subTot + 10;
+
+    }
+
+    //getting check options 
+
+    //proteins
+    let proteinOptions = document.getElementsByName("proteins");
+
+    let arrProt = []; 
+
+    for(let i = 0; i < proteinOptions.length; i++){
+        if(proteinOptions[i].checked){
+            arrProt.push(proteinOptions[i].value);
+            subTot = subTot + +proteinOptions[i].dataset.cost;
+        }
+    }
+    //cheese
+    let cheeseOpt = document.getElementsByName("cheese");
+
+    let arrCheese = []; 
+
+    for(let i = 0; i < cheeseOpt.length; i++){
+        if(cheeseOpt[i].checked){
+            arrCheese.push(cheeseOpt[i].value);
+            subTot = subTot + +cheeseOpt[i].dataset.cost;
+        }
+    }
+    //relish 
+    let relishOpt = document.getElementsByName("relish");
+
+    let arrRel = []; 
+
+    for(let i = 0; i < relishOpt.length; i++){
+        if(relishOpt[i].checked){
+            arrRel.push(relishOpt[i].value);
+            subTot = subTot + +relishOpt[i].dataset.cost;
+        }
+    }
+    //sauces
+    let sauceOptions = document.getElementsByName("sauce");
+
+    let arrSauce = []; 
+
+    for(let i = 0; i < sauceOptions.length; i++){
+        if(sauceOptions[i].checked){
+            arrSauce.push(sauceOptions[i].value);
+            subTot = subTot + +sauceOptions[i].dataset.cost;
+        }
+    }
+
+    newSub.push({
+        subName: subName,
+        subBread: bread, 
+        subProtein: arrProt,
+        subCheese: arrCheese, 
+        subRelish: arrRel, 
+        subSauce: arrSauce
+    });
     
+    console.log(newSub); 
+
+    document.getElementById("realTimeCost").innerHTML ="R0.00"; 
+    document.getElementById("subForm").reset();
 }
 
+
+runningCost = () =>{
+
+    runCost = 0; 
+
+    let bread = document.getElementById("breadOpt").value; 
+
+    if(bread === "Brioche"){
+        runCost = runCost + 30;
+
+    } else if (bread === "Bagel"){
+        runCost = runCost + 25;
+
+    } else if (bread === "Baguette"){
+        runCost = runCost + 15;
+
+    } else if (bread === "Whole"){
+        runCost = runCost + 20;
+
+    } else if (bread === "Bun"){
+        runCost = runCost + 10;
+    }
+
+    //proteins
+    let proteinOptions = document.getElementsByName("proteins");
+
+    for(let i = 0; i < proteinOptions.length; i++){
+        if(proteinOptions[i].checked){
+            runCost = runCost + +proteinOptions[i].dataset.cost;
+        }
+    }
+    //cheese
+    let cheeseOpt = document.getElementsByName("cheese");
+
+    for(let i = 0; i < cheeseOpt.length; i++){
+        if(cheeseOpt[i].checked){
+            runCost = runCost + +cheeseOpt[i].dataset.cost;
+        }
+    }
+    //relish 
+    let relishOpt = document.getElementsByName("relish");
+
+    for(let i = 0; i < relishOpt.length; i++){
+        if(relishOpt[i].checked){
+            runCost = runCost + +relishOpt[i].dataset.cost;
+        }
+    }
+    //sauces
+    let sauceOptions = document.getElementsByName("sauce");
+
+    for(let i = 0; i < sauceOptions.length; i++){
+        if(sauceOptions[i].checked){
+            runCost = runCost + +sauceOptions[i].dataset.cost;
+        }
+    }
+
+    document.getElementById("realTimeCost").innerHTML = "R" + runCost + ".00"; 
+    
+}
