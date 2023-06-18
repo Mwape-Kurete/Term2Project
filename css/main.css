@@ -141,6 +141,26 @@ footer {
 
 /*build sub*/
 
+form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.bottomForm{
+    display: inline;
+}
+
+#runningCost{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+button{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .builder {
     padding-left: 120px;
     padding-right: 120px;
@@ -177,6 +197,7 @@ footer {
     padding: 2px;
     text-align: center;
     font-family: 'Darumadrop One', cursive;
+    float: right;
 }
 
 .checkout {

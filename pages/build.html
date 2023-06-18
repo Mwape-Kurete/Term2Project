@@ -76,6 +76,11 @@
     <!--Bootstrap container-->
 
     <div class="container-fluid builder">
+        <div class="row topSubs">
+            <div class="col-12 subsOfMonth">
+
+            </div>
+        </div>
         <!--Build section section-->
         <div class="row build-sub">
 
@@ -83,15 +88,23 @@
                 <h1 class="subPageTitle">Build A sub</h1>
 
                 <form>
-                    <input type="text" class="form-control" placeholder="Give your Super Sub" id="subName">
-
-                    <select name="breads" id="breadOpt">
-                        <option>BREAD</option>
-                        <option>Brioche</option>
-                        <option>Bagel</option>
-                        <option>Baguette</option>
-                    </select>
-
+                    <div class="row subN">
+                        <div class="col-12">
+                            <h2>Name Your Sub</h2>
+                            <input type="text" class="form-control" placeholder="Give your Super Sub" id="subName">
+                        </div>
+                    </div>
+                    <div class="row breadChoice">
+                        <h2>Choose Your Bread</h2>
+                        <div class="col-12">
+                            <select name="breads" id="breadOpt">
+                                <option>BREAD</option>
+                                <option>Brioche</option>
+                                <option>Bagel</option>
+                                <option>Baguette</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="row fillings">
                         <h2>Choose Your Fillings</h2>
                         <div class="col-4 proteins"> 
@@ -273,33 +286,34 @@
                             </div> 
                         </div>
                      </div>
+                        <div class="bottomForm">
+                        <div class="orderCost" id="realTimeCost">
+                            <h2 id="runningCost">R0.00</h2>
+                        </div>
+
+                        <button class="addSub" type="button">Add This Sub</button>
+                    </div>
                 </form>
-
-                <row class="row breadImg">
-                    <div class="col-12"></div>
-                </row>
-                <row class="row toppImg">
-                    <div class="col-12"></div>
-                </row>
-                <row class="row sauceImg">
-                    <div class="col-12"></div>
-                </row>
-
-                <button class="addSub" type="button">Add This Sub</button>
             </div>
 
             <div class="col-6 sub_builder">
                 <h1 class="subPageTitle">Receipt</h1>
-                <div class="receipt">
-                    <!--Calculation-->
-                    <p>bread chosen: R</p>
-                    <p>toppings <i class="toppAmount">x</i> chosen: R</p>
-                    <p>sauces <i class="toppAmount">x</i> chosen: R</p>
-                    <h4 class="total">Your Total Is: </h4>
+                <div class="ordered">
+                    <div class="col-12 orderedSubs">
+                        <p><strong>Bread: </strong>Value</p>
+                        <p><strong>Fillings: </strong>Value</p>
+                        <p><strong>Sauces: </strong>Value</p>
+                    </div>
                 </div>
-                <a href="/pages/checkout.html">
+                <div class="receiptOut">
+                    <div class="receipt">
+                        <!--Calculation-->
+                        <h4 id="totalCost"><strong>Your Total Is:</strong> Value</h4>
+                    </div>
+                </div>
+                <div class="button-check">
                     <button type="button" class="checkout">PROCEED TO CHECKOUT</button>
-                </a>
+                </div>
             </div>
         </div>
 
