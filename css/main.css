@@ -237,14 +237,7 @@ select{
     margin: 5px;
 }
 
-.card-body{
-    border: solid 3px #19462f; ;
-    background-color: #f4e2c0;
-    padding: 10px; 
-    border-radius: 8px;
-    min-width: 200px;
-    margin: 5px;
-}
+
 
 
 /*checkout page*/
@@ -252,10 +245,16 @@ select{
     height: 750px;
 }
 
-.checkOutForm{
+/* .checkOutForm{
     margin-top: 80px;
-}
+} */
 
+.list-group{
+    display: inline;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
 /*pay*/
 
 .payForm{
@@ -266,6 +265,6 @@ select{
     margin-top: 100px;
 }
 
-.imgBtn{
-    margin-top: 100px;
+.btn-success{
+    margin-bottom: 50px;
 }
