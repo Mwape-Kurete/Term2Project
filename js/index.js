@@ -2,7 +2,9 @@ let newSub = [];
 
 buildAsub = () => {
     
-    let newSubTot;
+    let newSubTot = 0;
+
+    
 
     
 }
