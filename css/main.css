@@ -147,7 +147,7 @@ footer {
 }
 
 .build-sub {
-    height: 850px;
+    min-height: 850px;
 }
 
 .sub_builder {
