@@ -227,6 +227,16 @@ select{
     color: #401f1a;
 }
 
+.orderBlock{
+    display: inline-block;
+    border: solid 3px #19462f; ;
+    background-color: #f4e2c0;
+    padding: 10px; 
+    border-radius: 8px;
+    min-width: 200px;
+    margin: 5px;
+}
+
 
 /*checkout page*/
 .checkForm{

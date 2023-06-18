@@ -292,28 +292,21 @@
                         <div class="orderPrice" id="realTimeCost">R0.00
                         </div>
 
-                        <button class="addSub" type="button" onclick="buildAsub()">Add This Sub</button>
+                        <button class="addSub" type="button" onclick="buildAsub(); dispSubOrders()">Add This Sub</button>
                     </div>
                 </form>
             </div>
 
             <div class="col-6 sub_builder">
                 <h1 class="subPageTitle">Receipt</h1>
-                <div class="ordered">
-                    <div class="col-12 orderedSubs">
-                        <p><strong>Bread: </strong>Value</p>
-                        <p><strong>Proteins: </strong>Value</p>
-                        <p><strong>Cheese: </strong>Value</p>
-                        <p><strong>Relish: </strong>Value</p>
-                        <p><strong>Sauces: </strong>Value</p>
-                    </div>
+                <div id="ordered">
+                    
                 </div>
                 <div class="receiptOut">
                     <div class="receipt">
                         <!--Calculation-->
-                        <h4 id="totalCost"><strong>Your Total Is:</strong> Value</h4>
+                        <h4 id="totalCost"><strong>Your Total Is:</strong> R0.00</h4>
                     </div>
-                </div>
                 <div class="button-check">
                     <button type="button" class="checkout">PROCEED TO CHECKOUT</button>
                 </div>
