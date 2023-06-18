@@ -38,10 +38,11 @@
     <!--Internal Files-->
     <link rel="stylesheet" href="/css/main.css">
     <script src="../js/index.js"></script>
+    <script src="../js/data.js"></script>
 
 </head>
 
-<body>
+<body onload="dispSubs()">
 
     <!--nav section-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
@@ -162,6 +163,13 @@
                                 </label>
                             </div>
                             <div class="fill-check">
+                                <input class="form-check-input" name="proteins" type="checkbox" value="braaiChick" id="braaiChick"
+                                    data-cost="10">
+                                <label class="form-check-label" for="braaiChick">
+                                    Braaied Chicken
+                                </label>
+                            </div>
+                            <div class="fill-check">
                                 <input class="form-check-input" name="proteins" type="checkbox" value="salami" id="salami"
                                     data-cost="10">
                                 <label class="form-check-label" for="salami">
@@ -213,9 +221,23 @@
                             <!--relish x7-->
                             <div class="fill-check">
                                 <input class="form-check-input" name="relish" type="checkbox" value="avo"
-                                    id="avo" data-cost="25">
+                                    id="avo" data-cost="20">
                                 <label class="form-check-label" for="avo">
                                     Avocado
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="relish" type="checkbox" value="rocket"
+                                    id="rocket" data-cost="10">
+                                <label class="form-check-label" for="rocket">
+                                    Rocket
+                                </label>
+                            </div>
+                            <div class="fill-check">
+                                <input class="form-check-input" name="relish" type="checkbox" value="jala"
+                                    id="jala" data-cost="10">
+                                <label class="form-check-label" for="jala">
+                                    Jalapeño
                                 </label>
                             </div>
                             <div class="fill-check">
@@ -266,6 +288,10 @@
                     <div class="row fillings">
                         <h2>Choose Your Sauce</h2>
                         <div class="col-12">
+                            <div class="sauce-check">
+                                <input class="form-check-input" name="sauce" type="checkbox" id="subSauce" value="subSauce" data-cost="10">
+                                <label class="form-check-label" for="subSauce">Famous Sub Sauce</label>
+                            </div>
                             <div class="sauce-check">
                                 <input class="form-check-input" name="sauce" type="checkbox" id="bbq" value="bbq" data-cost="7">
                                 <label class="form-check-label" for="bbq">Barbecue</label>

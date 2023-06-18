@@ -1,3 +1,37 @@
+dispSubs = () => {
+    let topMonthSubs = document.getElementById("subsOfMonth"); 
+
+    topMonthSubs.innerHTML = "";
+
+    for(let i = 0; i < subData.length; i++){
+        let name = subData[i].subName;
+        let bread = subData[i].subBread;
+        let protein = subData[i].subProtein;
+        let cheese = subData[i].subCheese;
+        let relish = subData[i].subRelish;
+        let sauce = subData[i].subSauce;
+        let cost = subData[i].subPrice;
+
+        topMonthSubs.innerHTML += `
+        <div class="card">
+            <div class="card-body">
+                <h3><strong>Sub Name: </strong>${name}</h3>
+                <p><strong>Bread: </strong>${bread}</p>
+                <p><strong>Proteins: </strong>${protein.join(', ')}</p>
+                <p><strong>Cheese: </strong>${cheese.join(', ')}</p>
+                <p><strong>Relish: </strong>${relish.join(', ')}</p>
+                <p><strong>Sauces: </strong>${sauce.join(', ')}</p>
+                <p><strong>Price of this Sub: </strong>R${cost}.00</p>
+            </div>
+        </div>
+        `
+    }
+
+    // window.onload = function (){
+    //     dispSubs();
+    // }
+}
+
 let newSub = [];
 
 buildAsub = () => {
