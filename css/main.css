@@ -68,6 +68,14 @@ li {
     margin-bottom: 150px;
 }
 
+.btn-light{
+    display: inline-block !important;
+    margin-right: 10px;
+    background-color: #385646;
+    color: #f3eee5;
+
+}
+
 /*about*/
 
 .about {
@@ -128,10 +136,12 @@ footer {
 
 .socials {
     display: inline;
+    padding: 5px;
 }
 
 .wellNumOne {
     padding-left: 40px;
+    float: left;
 }
 
 .wellNumtwo {
@@ -144,7 +154,6 @@ footer {
 
 
 /*build sub*/
-
 form{
     width: 80%;
     margin: 0 auto;
@@ -259,10 +268,12 @@ select{
 
 .payForm{
     height: 750px;
+    margin: 0 auto;
 }
 
 .stndForm{
     margin-top: 100px;
+    padding-left: 100px;
 }
 
 .btn-success{

@@ -13,7 +13,9 @@ subDispCheck = () =>{
         chTotal += cost; 
 
         items.innerHTML = `
-        <li class="list-group-item"><strong>Sub Name: </strong>${name} - <strong>R${cost}.00</li>
+            <ul class="list-group" >
+                <li class="list-group-item"><strong>Sub Name: </strong>${name} - <strong>R${cost}.00</li>
+            </ul>
         `
     }
 
